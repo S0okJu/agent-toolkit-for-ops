@@ -1,0 +1,20 @@
+[project]
+name = "agent-toolkit-for-ops"
+version = "0.1.0"
+description = "Skills and MCP servers for system operations"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["mcp-servers/*"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6", "pyyaml>=6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["tests", "mcp-servers"]
