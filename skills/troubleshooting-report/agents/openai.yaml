@@ -1,0 +1,4 @@
+# Codex-only metadata (Claude Code ignores this file).
+# https://learn.chatgpt.com/docs/build-skills
+policy:
+  allow_implicit_invocation: true
